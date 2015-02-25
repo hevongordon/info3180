@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<style type="text/css">
+.left{
+float: left;
+width: 50%;
+}
+.right{
+	float: right;
+	width: 50%;
+	margin-right: 120px;
+
+ 
+}
+fieldset{
+	width: 65%;
+}
+
+</style>
+
+
+{% block js %}
+{% endblock %}
+
+{%block main%}
+<div class="left"><img src="{{profilepic}}"></div>
+<div class="right">
+<fieldset><div><h2>Hevon Gordon</h2></div></fieldset>
+<fieldset><div>profile added on {{timeadded}}</div></fieldset>
+<fieldset>
+Username:{{username}}<br/><br/>
+ID:{{id}}<br/><br/>
+sex:{{sex}}<br/><br/>
+Age:{{age}}<br/><br/>
+Highest Score:{{hscore}}<br/><br/>
+TDollars:{{tdollars}}<br/><br/>
+</fieldset>
+<div>
+{%endblock%}
+</body>
+</html>
